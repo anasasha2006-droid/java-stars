@@ -9,7 +9,7 @@ public class hw1 {
          Scanner x=new Scanner(System.in);
          System.out.println("enter the number:");
          int n=x.nextInt();
-         for (int i = 0; n < 6; i++) {
+         for (int i = 0; n < n; i++) {
              System.out.println("*");
              n++;
             
@@ -17,3 +17,4 @@ public class hw1 {
     }
     
 }
+
