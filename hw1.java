@@ -11,11 +11,12 @@ public class hw1 {
          int n=x.nextInt();
          for (int i = 0; i < n; i++) {
              System.out.println("*");
-             n++;
+             
             
         }
     }
     
 }
+
 
 
