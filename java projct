@@ -1,0 +1,35 @@
+
+import java.util.Scanner;
+
+
+public class remak {
+    public static void main(String[] args) {
+        Scanner x=new Scanner(System.in);
+        System.out.print("enter the of vaiues:");
+        int n=x.nextInt();
+        int[] firstarray=new int[n];
+        int[] sucondarray=new int[n];
+        for(int i=0; i<firstarray.length;i++){
+            System.out.print("enret the number"+(i+1)+": ");
+            firstarray[i]=x.nextInt();
+        } 
+        for(int i=0; i<firstarray.length;i++){
+            int m=firstarray[i];
+            if(m%2==0){
+                sucondarray[i]=m*m;
+                System.out.println("the number "+m+" is even-->"+"("+m+"*"+m+")"+"= "+sucondarray[i]);
+                
+            }else{
+                sucondarray[i]=m+m;
+                System.out.println("the number "+m+" is odd-->"+"("+m+"+"+m+")"+"= "+sucondarray[i]);
+            }
+        }
+        int totl_sum=0;
+        for(int i=0; i<sucondarray.length;i++){
+            totl_sum+=sucondarray[i];
+           
+        }
+      
+        System.out.println("totl_sum = "+totl_sum);
+    }
+}
